@@ -291,8 +291,7 @@ func stateOp(filter *RDBFilter) (state, error) {
 	default:
         return nil, ErrUnsupportedOp
 	}
-
-    return nil, ErrUnsupportedOp
+    panic("not reached")
 }
 
 // DB index operation
