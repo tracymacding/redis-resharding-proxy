@@ -289,7 +289,9 @@ func stateOp(filter *RDBFilter) (state, error) {
 		}
 		return statePadding, nil
 	default:
+        return nil, ErrUnsupportedOp
 	}
+
     return nil, ErrUnsupportedOp
 }
 
